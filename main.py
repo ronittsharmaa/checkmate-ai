@@ -148,10 +148,10 @@ if __name__ == "__main__":
             break
 
         # AI move
-        print("\nAI is thinking...")
+        print("\nComputer's turn:...")
         ai_move = _determine_best_move(board, is_white=False, depth=2)
         board.push(ai_move)
-        print(f"\nAI played: {ai_move}")
+        print(f"\nComputer played: {ai_move}")
         print(board)
 
     print("\nGame Over:", board.result())
